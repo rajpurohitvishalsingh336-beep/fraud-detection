@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Insurance Fraud Detection - Login</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+<style>
+
+body{
+
+height:100vh;
+
+background: linear-gradient(-45deg, #667eea, #764ba2, #6a11cb, #2575fc);
+
+background-size: 400% 400%;
+
+animation: gradientBG 10s ease infinite;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-family: 'Segoe UI', sans-serif;
+
+}
+
+
+@keyframes gradientBG{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+
+}
+
+
+.login-card{
+
+background: rgba(255,255,255,0.15);
+
+backdrop-filter: blur(15px);
+
+border-radius:20px;
+
+padding:40px;
+
+width:380px;
+
+box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+
+color:white;
+
+animation: fadeIn 1s ease;
+
+}
+
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+.icon{
+
+font-size:60px;
+
+margin-bottom:10px;
+
+}
+
+
+.form-control, .form-select{
+
+border-radius:10px;
+
+}
+
+
+.login-btn{
+
+background:white;
+
+color:#2575fc;
+
+font-weight:bold;
+
+border-radius:10px;
+
+transition:0.3s;
+
+}
+
+
+.login-btn:hover{
+
+background:#2575fc;
+
+color:white;
+
+transform:scale(1.05);
+
+}
+
+
+.footer-text{
+
+font-size:13px;
+
+margin-top:15px;
+
+opacity:0.9;
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="login-card text-center">
+
+
+<i class="bi bi-shield-lock-fill icon"></i>
+
+<h3>Insurance Fraud Detection</h3>
+
+<p class="mb-4">Machine Learning Secure Login</p>
+
+
+<form action="/login" method="post">
+
+
+<div class="mb-3 text-start">
+
+<label>Select Role</label>
+
+<select name="role" class="form-select">
+
+<option value="user">User Login</option>
+
+<option value="admin">Admin Login</option>
+
+</select>
+
+</div>
+
+
+<div class="mb-3 text-start">
+
+<label>Password (Admin only)</label>
+
+<input type="password"
+
+name="password"
+
+class="form-control"
+
+placeholder="Enter admin password">
+
+</div>
+
+
+<button class="btn login-btn w-100">
+
+<i class="bi bi-box-arrow-in-right"></i> Login
+
+</button>
+
+
+</form>
+
+
+<div class="footer-text">
+
+Admin Default Password: <b>1234</b>
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
